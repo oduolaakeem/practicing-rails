@@ -32,5 +32,6 @@ class UserSignupTest < ActionDispatch::IntegrationTest
     assert_equal divs.length, 0
     # Flash messag exists
     assert_not flash.empty?
+    assert is_logged_in?
   end
 end
