@@ -1,7 +1,6 @@
 # Projects in progress
 
 - twittor: Twitter Clone App (Ruby on Rails Tutorial, 4th Edition)
-- 
 
 ## Getting started
 
