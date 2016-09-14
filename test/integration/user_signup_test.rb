@@ -16,6 +16,22 @@ class UserSignupTest < ActionDispatch::IntegrationTest
     assert_select 'div.field_with_errors'
   end
 
+  test "not given password when signup" do
+    get signup_path
+    assert_no_difference("User.count") do
+      post users_path, params: { user: {
+        name: 'User',
+        email: 'user@co.org',
+        password: ''
+        }}
+    end
+    assert_template 'users/new'
+    assert_select 'div#error_explanation'
+    # Check for duplicate error messages
+    assert_select 'div#error_explanation li', {count: 1, text: "Password can't be blank"}
+    assert_select 'div.field_with_errors'
+  end
+
   test "valid signup information" do
     get signup_path
     assert_difference("User.count", 1) do
