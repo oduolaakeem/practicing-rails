@@ -1,15 +1,15 @@
-# Projects in progress
+# Ruby on Rails Tutorial sample application
 
-- twittor: Twitter Clone App (Ruby on Rails Tutorial, 4th Edition)
-- 
+This is the sample application for
+[*Ruby on Rails Tutorial:
+Learn Web Development with Rails*](http://www.railstutorial.org/)
+by [Michael Hartl](http://www.michaelhartl.com/).
 
-## Getting started
+For more information, see the
+[*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
 
-To get started with each project, `git checkout <project-name>` and then run the commands below:
+## License
 
-```
-$ bundle install --without production
-$ rails db:migrate
-$ rails test
-$ rails server
-```
+All source code in the [Ruby on Rails Tutorial](http://railstutorial.org/)
+is available jointly under the MIT License and the Beerware License. See
+[LICENSE.md](LICENSE.md) for details.
