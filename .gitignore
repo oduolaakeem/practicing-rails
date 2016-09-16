@@ -22,3 +22,7 @@
 
 # Ignore Spring files.
 /spring/*.pid
+
+# Ignore ctag files
+.tags*
+tags
