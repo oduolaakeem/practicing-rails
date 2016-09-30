@@ -1,18 +1,24 @@
-# Projects in progress
+# README
 
-- twittor: A Twitter clone app (Ruby on Rails Tutorial, 4th Edition)
-- depot: Yet another shopping cart app (Agile Web Development with Rails 5)
-- artstore: Full-feature e-commerce website (Rails EC Course)
-- social: A Tumblr clone app (Rails Crush Course)
-- shine: A company's customer contact management app (Rails, Angular, Postgres, Bootstrap) 
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-## Getting started
+Things you may want to cover:
 
-To get started with each project, `git checkout <project-name>` and then run the commands below:
+* Ruby version
 
-```
-$ bundle install --without production
-$ rails db:migrate
-$ rails test
-$ rails server
-```
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
