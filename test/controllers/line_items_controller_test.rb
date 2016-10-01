@@ -17,13 +17,13 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create line_item" do
     assert_difference('LineItem.count') do
-      post line_items_url, params: { product_id: products(:ruby).id }
+      post line_items_url, params: { product_id: products(:ruby).id }, xhr: true
     end
 
-    follow_redirect!
-
-    assert_select 'h2', 'Your Cart'
-    assert_select 'td', products(:ruby).title
+    assert_response :success
+    assert_select_jquery :html, '#cart' do
+      assert_select 'tr#current_item td', products(:ruby).title
+    end
   end
 
   test "should show line_item" do
